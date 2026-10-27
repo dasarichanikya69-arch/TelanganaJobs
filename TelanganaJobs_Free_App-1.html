@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="te">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123b72">
+<title>Telangana Jobs</title>
+<style>
+:root{--blue:#123b72;--blue2:#1d58a7;--bg:#f3f6fb;--card:#fff;--text:#172033;--muted:#5d687a;--green:#137547}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Telugu",sans-serif;background:var(--bg);color:var(--text)}
+header{background:linear-gradient(135deg,var(--blue),var(--blue2));color:white;padding:22px 16px 20px;border-radius:0 0 22px 22px}
+.brand{font-size:24px;font-weight:800}.sub{opacity:.9;font-size:14px;margin-top:5px}
+.wrap{max-width:760px;margin:auto;padding:14px}
+.search{width:100%;padding:13px 14px;border:1px solid #d6ddeb;border-radius:12px;font-size:16px;background:white;margin:12px 0}
+.nav{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:4px 0 14px}
+.nav button,.filter{border:0;border-radius:11px;padding:11px 6px;background:white;color:var(--blue);font-weight:700;box-shadow:0 1px 4px #0000000b}
+.nav button.active,.filter.active{background:var(--blue);color:white}
+h2{font-size:19px;margin:16px 0 10px}.note{font-size:13px;color:var(--muted);line-height:1.5}
+.card{background:var(--card);padding:15px;border-radius:15px;margin:10px 0;box-shadow:0 3px 12px #152e550c;border:1px solid #e7ebf2}
+.card h3{font-size:17px;margin:0 0 7px}.tag{display:inline-block;background:#e9f1ff;color:var(--blue);padding:4px 8px;border-radius:20px;font-size:12px;margin:0 4px 7px 0}
+.card p{margin:5px 0;font-size:14px;line-height:1.5}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+a.btn,button.btn{display:inline-block;text-decoration:none;border:0;border-radius:9px;padding:10px 12px;font-weight:700;font-size:14px;background:var(--blue);color:white}
+a.btn.secondary,button.btn.secondary{background:#e8eef8;color:var(--blue)}
+footer{text-align:center;padding:20px 10px;color:var(--muted);font-size:12px}
+.hidden{display:none!important}.section{display:none}.section.active{display:block}
+</style>
+</head>
+<body>
+<header><div class="wrap" style="padding:0"><div class="brand">📘 తెలంగాణ ప్రభుత్వ ఉద్యోగాలు</div><div class="sub">Jobs • Last Dates • Results & Hall Tickets</div></div></header>
+<main class="wrap">
+<input id="search" class="search" placeholder="ఉద్యోగం లేదా సంస్థ పేరు వెతుకు..." aria-label="Search jobs">
+<div class="nav">
+<button class="active" data-tab="jobs">కొత్త ఉద్యోగాలు</button>
+<button data-tab="dates">చివరి తేదీలు</button>
+<button data-tab="results">ఫలితాలు / హాల్‌టికెట్లు</button>
+</div>
+<section id="jobs" class="section active">
+<h2>ఉద్యోగాల సమాచారం</h2>
+<p class="note">ఇది నీ యాప్ మొదటి ఉచిత వెర్షన్. కింద అధికారిక వెబ్‌సైట్లకు లింకులు ఉన్నాయి. నోటిఫికేషన్, అర్హత, చివరి తేదీని అధికారిక ప్రకటనలో తప్పనిసరిగా నిర్ధారించుకో.</p>
+<div id="jobCards">
+<article class="card" data-search="telangana high court తెలంగాణ హైకోర్టు attendant office subordinate">
+<h3>తెలంగాణ హైకోర్టు</h3><span class="tag">తెలంగాణ</span><span class="tag">నోటిఫికేషన్లు</span>
+<p>Office Subordinate / ఇతర పోస్టుల తాజా నోటిఫికేషన్లు అధికారిక వెబ్‌సైట్‌లో చూడండి.</p>
+<div class="actions"><a class="btn" href="https://tshc.gov.in/" target="_blank" rel="noopener">అధికారిక వెబ్‌సైట్</a></div>
+</article>
+<article class="card" data-search="tspsc telangana public service commission తెలంగాణ ఉద్యోగాలు">
+<h3>తెలంగాణ పబ్లిక్ సర్వీస్ కమిషన్</h3><span class="tag">తెలంగాణ</span>
+<p>ప్రభుత్వ నియామక ప్రకటనలు, పరీక్షల సమాచారం కోసం.</p>
+<div class="actions"><a class="btn" href="https://www.tspsc.gov.in/" target="_blank" rel="noopener">అధికారిక వెబ్‌సైట్</a></div>
+</article>
+<article class="card" data-search="railway rrb alp technician railway recruitment రైల్వే">
+<h3>రైల్వే ఉద్యోగాలు (RRB)</h3><span class="tag">కేంద్ర ప్రభుత్వం</span><span class="tag">ALP / Technician</span>
+<p>ALP, Technician తదితర పోస్టుల కోసం సంబంధిత RRB అధికారిక వెబ్‌సైట్‌ను చూడండి.</p>
+<div class="actions"><a class="btn" href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">RRB అధికారిక సైట్</a></div>
+</article>
+<article class="card" data-search="ssc staff selection commission mts gd central jobs కేంద్ర">
+<h3>SSC కేంద్ర ప్రభుత్వ ఉద్యోగాలు</h3><span class="tag">కేంద్ర ప్రభుత్వం</span><span class="tag">MTS / ఇతర పోస్టులు</span>
+<p>SSC నోటిఫికేషన్లు, అప్లికేషన్ తేదీలు అధికారిక సైట్‌లో నిర్ధారించుకోండి.</p>
+<div class="actions"><a class="btn" href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC అధికారిక సైట్</a></div>
+</article>
+</div>
+</section>
+<section id="dates" class="section">
+<h2>చివరి తేదీలు</h2>
+<div class="card"><h3>చివరి తేదీ ఎలా నిర్ధారించాలి?</h3><p>ప్రతి నోటిఫికేషన్ PDFలో “Important Dates / Last Date” భాగాన్ని చూడండి. తేదీని అధికారిక ప్రకటన నుంచే నమోదు చేయాలి.</p><div class="actions"><a class="btn" href="https://tshc.gov.in/" target="_blank" rel="noopener">TG High Court</a><a class="btn secondary" href="https://www.tspsc.gov.in/" target="_blank" rel="noopener">TSPSC</a><a class="btn secondary" href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC</a></div></div>
+</section>
+<section id="results" class="section">
+<h2>ఫలితాలు & హాల్‌టికెట్లు</h2>
+<div class="card"><h3>తెలంగాణ హైకోర్టు</h3><p>ఫలితాలు, హాల్‌టికెట్లు, ఎంపిక జాబితా అధికారిక సైట్‌లో మాత్రమే నిర్ధారించుకోండి.</p><div class="actions"><a class="btn" href="https://tshc.gov.in/" target="_blank" rel="noopener">ఫలితాలు చూడండి</a></div></div>
+<div class="card"><h3>రైల్వే RRB</h3><p>మీ RRB ప్రాంతానికి సంబంధించిన అధికారిక వెబ్‌సైట్‌లో ఫలితాలు, అడ్మిట్ కార్డులు చూడండి.</p><div class="actions"><a class="btn" href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">RRB వెబ్‌సైట్</a></div></div>
+<div class="card"><h3>SSC</h3><p>SSC అధికారిక వెబ్‌సైట్‌లో ఫలితాలు, అడ్మిట్ కార్డుల సమాచారం చూడండి.</p><div class="actions"><a class="btn" href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC వెబ్‌సైట్</a></div></div>
+</section>
+<div class="card"><h3>⚠️ ముఖ్యమైన సూచన</h3><p class="note">ఈ యాప్ ప్రభుత్వ అధికారిక యాప్ కాదు. సమాచారం కోసం అధికారిక లింకులు మాత్రమే ఉపయోగించండి. పోస్టుల వివరాలు, అర్హత, ఫీజు, చివరి తేదీ మారవచ్చు; అప్లై చేసే ముందు అసలు నోటిఫికేషన్ చదవండి.</p></div>
+</main>
+<footer>Telangana Jobs • ఉచిత మొదటి వెర్షన్</footer>
+<script>
+const tabs=[...document.querySelectorAll('[data-tab]')];
+tabs.forEach(b=>b.addEventListener('click',()=>{tabs.forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id===b.dataset.tab));}));
+document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();document.querySelectorAll('#jobCards .card').forEach(c=>c.classList.toggle('hidden',!c.dataset.search.includes(q)));});
+</script>
+</body>
+</html>
